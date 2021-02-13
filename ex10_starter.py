@@ -10,7 +10,7 @@ else:
 pattern = os.path.join(hdir,'*')
 
 # TODO: Use the glob.glob() function to obtain the list of filenames
-
+glob.glob('HOMEPATH')
 # TODO: use os.path.getsize to find each file's size
 
 # TODO: Add a test to only display files that are not zero length
