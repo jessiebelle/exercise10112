@@ -18,19 +18,26 @@ print(pattern)
 # for our_file_name in glob.glob('/Users/rafikaturemis/JessnRaf_Wk3/*'):
 #     print(our_file_name)
 
-for our_repo in glob.glob('/Users/rafikaturemis/JessnRaf_Wk3/exercise10112/*'):
-    file_sizes = os.path.getsize(our_repo)
-    print(file_sizes)
-    if len(our_repo) == 0:
-        pass
-    else:
-        print(len(our_repo))
-    our_repo = os.path.basename(our_repo)
-    print(our_repo)
+# for our_repo in glob.glob('/Users/rafikaturemis/JessnRaf_Wk3/exercise10112/*'):
+#     file_sizes = os.path.getsize(our_repo)
+#     print(file_sizes)
+#     if len(our_repo) == 0:
+#         pass
+#     else:
+#         print(len(our_repo))
+#     our_repo = os.path.basename(our_repo)
+#     print(our_repo)
+
+for file in glob.glob(pattern):
+    file_size = os.path.getsize(file)
+    # print(file_sizes)
+    if file_size != 0:
+        file = os.path.basename(file)
+        print(file, file_size)
 
 # Below we were attempting to familiarize ourselves with the functionality of glob.glob() and .getsize()
-# our_repo = glob.glob('/Users/rafikaturemis/JessnRaf_Wk3/exercise10112/*')
-# print(our_repo)
+our_repo = glob.glob('/Users/rafikaturemis/JessnRaf_Wk3/exercise10112/*')
+print(our_repo)
 #
 # file_sizes = os.path.getsize("/Users/rafikaturemis/JessnRaf_Wk3/exercise10112/")
 # print(file_sizes)
